@@ -13,41 +13,23 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.blue[900],
       ),
-      body:Padding(
-        padding: EdgeInsets.all(50.0),
-        child: Text('Hello prof!',
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 1.0,
-            color:Colors.red[600],
-            fontFamily: 'IndieFlower',
-          ),),
-
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Text('hello world!'),
+          FlatButton(
+            onPressed: (){},
+            child: Text('click me'),
+            color: Colors.yellow,
+          ),
+          Container(
+            padding: EdgeInsets.all(20.0),
+            child: Text('Baba God!'),
+            color: Colors.cyan,
+          ),
+        ],
       ),
-//      Center(
-//        child:
-
-//        IconButton(
-//          onPressed: (){print('you click me');},
-//          icon:Icon(Icons.alternate_email),
-//          color: Colors.red[600],
-//        ),
-
-//        RaisedButton.icon(
-//          onPressed: (){},
-//          icon: Icon(
-//            Icons.mail,
-//          ),
-//          label: Text('messages'),
-//          textColor: Colors.white,
-//          color: Colors.pink,
-//        ),
-
-        //Image.asset('assets/david-clode-x.jpg'),
-        //Image.network(''),
-
-//        ),
 
     floatingActionButton: FloatingActionButton(
     onPressed: () {},
