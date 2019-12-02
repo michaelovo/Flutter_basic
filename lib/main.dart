@@ -14,22 +14,15 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[900],
       ),
       body:Center(
-        child: Text('Hello prof!',
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2.0,
-            color:Colors.grey[900],
-            fontFamily: 'IndieFlower',
-          ),
+        child: Image.asset('assets/david-clode-x.jpg'),
         ),
 
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Text('Click'),
-        backgroundColor: Colors.red[900],
-      ),
+    floatingActionButton: FloatingActionButton(
+    onPressed: () {},
+    child: Text('Click'),
+    backgroundColor: Colors.red[900],
+    ),
+
     );
   }
 }
