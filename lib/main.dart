@@ -14,7 +14,13 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[900],
       ),
       body:Center(
-        child: Image.asset('assets/david-clode-x.jpg'),
+        child: Icon(
+          Icons.airport_shuttle,
+          color: Colors.lightBlue,
+          size: 50.0,
+        ),
+                //Image.asset('assets/david-clode-x.jpg'),
+                //Image.network(''),
         ),
 
     floatingActionButton: FloatingActionButton(
