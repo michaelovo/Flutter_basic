@@ -14,11 +14,22 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[900],
       ),
       body:Center(
-        child: Icon(
-          Icons.airport_shuttle,
-          color: Colors.lightBlue,
-          size: 50.0,
+        child: IconButton(
+          onPressed: (){print('you click me');},
+          icon:Icon(Icons.alternate_email),
+          color: Colors.red[600],
         ),
+
+//        RaisedButton.icon(
+//          onPressed: (){},
+//          icon: Icon(
+//            Icons.mail,
+//          ),
+//          label: Text('messages'),
+//          textColor: Colors.white,
+//          color: Colors.pink,
+//        ),
+
                 //Image.asset('assets/david-clode-x.jpg'),
                 //Image.network(''),
         ),
