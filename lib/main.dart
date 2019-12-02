@@ -13,16 +13,16 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.blue[900],
       ),
-      body:Container(
-        padding: EdgeInsets.all(15.0),
-        //symmetric(horizontal: 30.0, vertical: 12.0),
-        //fromLTRB(10.0, 10.0, 15.0, 10.0),
-        margin: EdgeInsets.all(10.0),
-        //fromLTRB(200.0, 50.0, 0.0, 100.0),
-       // symmetric(vertical: 100.0,horizontal: 100.0),
-       
-        color: Colors.red[200],
-       child: Text('Hello'),
+      body:Padding(
+        padding: EdgeInsets.all(50.0),
+        child: Text('Hello prof!',
+          style: TextStyle(
+            fontSize: 20.0,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 1.0,
+            color:Colors.red[600],
+            fontFamily: 'IndieFlower',
+          ),),
 
       ),
 //      Center(
