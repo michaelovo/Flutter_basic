@@ -13,37 +13,50 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.blue[900],
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        crossAxisAlignment: CrossAxisAlignment.center,
+      body: Row(
         children: <Widget>[
-          Row(
-            children: <Widget>[
-              Text('Hello!'),
-
-              RaisedButton(
-                onPressed: (){},
-                child: Text('click'),
-                color: Colors.blue,
-              ),
-
-            ],
+          Expanded(
+            flex: 3,
+              child: Image.asset('assets/david-clode.jpg')),
+          Expanded(
+            flex: 4,
+            child: Container(
+              padding: EdgeInsets.all(20.0),
+              color: Colors.red[600],
+              child: Text('1',
+              style: TextStyle(
+                fontSize: 30.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),),
+            ),
           ),
-
-          Container(
-            padding: EdgeInsets.all(20.0),
-            child: Text('Hello!'),
-            color: Colors.yellow[600],
+          
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: EdgeInsets.all(20.0),
+              color: Colors.black,
+              child: Text('2',
+                style: TextStyle(
+                  fontSize: 30.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.redAccent,
+                ),),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(40.0),
-            child: Text(' Hello prof!'),
-            color: Colors.black,
-          ),
-          Container(
-            padding: EdgeInsets.all(60.0),
-            child: Text('Baba God!'),
-            color: Colors.red[900],
+          Expanded(
+            flex: 4,
+            child: Container(
+              padding: EdgeInsets.all(20.0),
+              color: Colors.blue[900],
+              child: Text('3',
+                style: TextStyle(
+                  fontSize: 30.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white70,
+                ),),
+            ),
           ),
         ],
       ),
